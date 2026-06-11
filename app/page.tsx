@@ -14,13 +14,13 @@ export default function HomePage() {
       <main className="flex-1">
         {/* СЕРВИСЫ + ПОПУЛЯРНЫЕ УСЛУГИ side by side */}
         <div className="max-w-[1200px] mx-auto px-3 py-4">
-          <div className="flex gap-4 items-start">
+          <div className="flex flex-col md:flex-row gap-4 items-start">
             {/* Left: Quick Services — fixed narrow width matching screenshot */}
-            <div className="w-[280px] shrink-0">
+            <div className="w-full md:w-[280px] shrink-0">
               <QuickServices />
             </div>
             {/* Right: Popular Services — takes remaining width */}
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <PopularServices />
             </div>
           </div>

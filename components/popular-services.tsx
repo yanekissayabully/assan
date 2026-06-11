@@ -46,14 +46,14 @@ export function PopularServices() {
       <h2 className="text-[13px] font-bold text-[var(--gov-green-dark)] uppercase mb-2.5 tracking-wide">
         ПОПУЛЯРНЫЕ УСЛУГИ
       </h2>
-      <div className="grid grid-cols-3 border-l border-dashed border-[#b0c8a0]">
-        <div className="border-r border-dashed border-[#b0c8a0] px-3 py-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:border-l border-dashed border-[#b0c8a0]">
+        <div className="md:border-r border-dashed border-[#b0c8a0] md:px-3 py-0">
           <ul>{col1.map((item, i) => <BulletItem key={i} label={item} />)}</ul>
         </div>
-        <div className="border-r border-dashed border-[#b0c8a0] px-3 py-0">
+        <div className="md:border-r border-dashed border-[#b0c8a0] md:px-3 py-0">
           <ul>{col2.map((item, i) => <BulletItem key={i} label={item} />)}</ul>
         </div>
-        <div className="px-3 py-0">
+        <div className="md:px-3 py-0">
           <ul>{col3.map((item, i) => <BulletItem key={i} label={item} />)}</ul>
         </div>
       </div>
